@@ -25,7 +25,7 @@ const Navigation=()=>{
     return(
       <Fragment>
         <NavigationContainer>
-            <LogoContainer to="/">
+            <LogoContainer to="/home">
             <div><CrwnLogo className="logo"/></div>
             </LogoContainer>
          
