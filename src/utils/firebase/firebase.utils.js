@@ -53,7 +53,7 @@ const firebaseConfig = {
       const docRef= doc(collectioRef,object.title.toLowerCase());
       batch.set(docRef,object)
     });
-
+  
     await batch.commit();
     console.log("done")
   }

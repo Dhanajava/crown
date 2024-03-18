@@ -34,7 +34,7 @@ const handleSubmit=async(event)=>{
         await createUserDocumentFromAuth(user,{displayName})
         resetFormFields();
     }catch(error){
-        if(error.code == 'auth/email-already-in-use'){
+        if(error.code === 'auth/email-already-in-use'){
             alert("Email Already Exists")
         }else{
             console.log("user creation",error);
